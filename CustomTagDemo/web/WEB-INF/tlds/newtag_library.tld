@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>newtag_library</short-name>
+  <uri>/WEB-INF/tlds/newtag_library</uri>
+  <tag>
+      <description>my greet tag</description>
+      <name>greet</name>
+      <tag-class>com.icbt.CustomTagDemo.TagHandler.TagHandler</tag-class>
+      <body-content>empty</body-content>
+      <attribute>
+          <name>user</name>
+          <required>true</required>
+          <rtexprvalue>true</rtexprvalue>
+      </attribute>
+  </tag>
+  <tag>
+      <description>my print tag</description>
+      <name>print</name>
+      <tag-class>com.icbt.CustomTagDemo.TagHandler.Printtag</tag-class>
+      <body-content>scriptless</body-content>
+      
+  </tag>
+  <tag>
+      <description>my badtag </description>
+      <name>badTag</name>
+      <tag-class>com.icbt.CustomTagDemo.TagHandler.badTag</tag-class>
+      <body-content>scriptless</body-content>
+      
+  </tag>
+  <tag>
+      <description>my classic tag </description>
+      <name>classicTag</name>
+      <tag-class>com.icbt.CustomTagDemo.TagHandler.classicTag</tag-class>
+      <body-content>scriptless</body-content>
+      
+  </tag>
+  <tag>
+      <description>my loop tag </description>
+      <name>loopTag</name>
+      <tag-class>com.icbt.CustomTagDemo.TagHandler.ioopTag</tag-class>
+      <body-content>scriptless</body-content>
+      <attribute>
+          <name>rounds</name>
+          <required>true</required>
+          <rtexprvalue>true</rtexprvalue>
+      </attribute>
+      
+  </tag>
+  <tag>
+      <description>my classic loop tag </description>
+      <name>classicloopTag</name>
+      <tag-class>com.icbt.CustomTagDemo.TagHandler.classicloopTag</tag-class>
+      <body-content>scriptless</body-content>
+      <attribute>
+          <name>rounds</name>
+          <required>true</required>
+          <rtexprvalue>true</rtexprvalue>
+      </attribute>
+      
+  </tag>
+</taglib>
